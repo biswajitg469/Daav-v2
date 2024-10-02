@@ -46,6 +46,7 @@
             <button type="submit" class="btn btn-primary">
                 {{ __('Log in') }}
             </button>
+            
         </div>
     </form>
 </x-guest-layout>

@@ -1,75 +1,97 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="#" class="brand-link">
-      <img
-        src="dist/img/AdminLTELogo.png"
-        alt="AdminLTE Logo"
-        class="brand-image img-circle elevation-3"
-        style="opacity: 0.8"
-      />
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
+<aside class="main-sidebar" style="background-color: #222d32;">
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img
-            src="dist/img/user2-160x160.jpg"
-            class="img-circle elevation-2"
-            alt="User Image"
-          />
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
-        </div>
-      </div>
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
 
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input
-            class="form-control form-control-sidebar"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" style="color: white;">
+            <li class="header" style="color: white;background: #1a2226;">MENU</li>
+            <!-- Menu 0.1 -->
+            <li class="treeview">
+                <a href="dashboard.php" style="color: white;"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
+            </li>
+            <!-- Menu 1 -->
+            <li class="treeview">
+                <a href="#" style="color: white;"><i class="fa fa-file-text"></i><span>Bills and Orders</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="order-create.php" style="color: white;"><i class="fa fa-solid fa-file-circle-plus"></i>Create Order-Bill</a></li>
+                    <li><a href="order-create.php" style="color: white;"><i class="fa fa-solid fa-list-check"></i>Manage Order-Bill</a></li>
+                    <li><a href="invoice-create.php" style="color: white;"><i class="fa fa-plus"></i>Create Estimate-Bill</a></li>
+                    <li><a href="invoice-list.php" style="color: white;"><i class="fa fa-cog"></i>Manage Estimate-Bill</a></li>
+                    <li><a href="#" class="download-csv" style="color: white;"><i class="fa fa-download"></i>Download CSV</a></li>
+                </ul>
+            </li>
+            <!-- Menu 2 -->
+            <li class="treeview">
+                <a href="#" style="color: white;"><i class="fa fa-archive"></i><span>Products</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="product-add.php" style="color: white;"><i class="fa fa-plus"></i>Add Products</a></li>
+                    <li><a href="product-list.php" style="color: white;"><i class="fa fa-cog"></i>Manage Products</a></li>
+                    <li><a href="design-add.php" style="color: white;"><i class="fa fa-solid fa-pen-nib"></i>Add Design</a></li>
+                    <li><a href="design-list.php" style="color: white;"><i class="fa fa-solid fa-pen-ruler"></i>Manage Design</a></li>
+                </ul>
+            </li>
+            <!-- Menu 3 -->
+            <li class="treeview">
+                <a href="#" style="color: white;"><i class="fa fa-users"></i><span>Customers</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="customer-add.php" style="color: white;"><i class="fa fa-user-plus"></i>Add Customer</a></li>
+                    <li><a href="customer-list.php" style="color: white;"><i class="fa fa-cog"></i>Manage Customers</a></li>
+                </ul>
+            </li>
+            <!-- Menu 4 -->
+            <li class="treeview">
+                <a href="#" style="color: white;"><i class="fa fa-solid fa-cart-shopping"></i><span>Delivery</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="delivery-add.php" style="color: white;"><i class="fa fa-solid fa-truck"></i>Add Delivery</a></li>
+                    <li><a href="delivery-manage.php" style="color: white;"><i class="fa fa-solid fa-magnifying-glass-chart"></i>Manage Delivery</a></li>
+                    <li><a href="delivery-manage-add.php" style="color: white;"><i class="fa fa-solid fa-map-location-dot"></i>Manage Delivery Address</a></li>
+                </ul>
+            </li>
+            <!-- Menu 5 -->
+            <li class="treeview">
+                <a href="#" style="color: white;"><i class="fa fa-solid fa-industry"></i><span>Factory</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="factory-work-order.php" style="color: white;"><i class="fa fa-solid fa-folder-plus"></i>Create Work Order</a></li>
+                    <li><a href="factory-work-manage.php" style="color: white;"><i class="fa fa-solid fa-pen-to-square"></i>Edit Work Order</a></li>
+                    <li><a href="factory-manage.php" style="color: white;"><i class="fa fa-solid fa-gears"></i>Manage Factory Details</a></li>
+                </ul>
+            </li>
+            <!-- Menu 6 -->
+            <li class="treeview">
+                <a href="#" style="color: white;"><i class="fa fa-user"></i><span>System Users</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="user-add.php" style="color: white;"><i class="fa fa-plus"></i>Add User</a></li>
+                    <li><a href="user-list.php" style="color: white;"><i class="fa fa-cog"></i>Manage Users</a></li>
+                </ul>
+            </li>
 
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul
-          class="nav nav-pills nav-sidebar flex-column"
-          data-widget="treeview"
-          role="menu"
-          data-accordion="false"
-        >
-          <!-- Add icons to the links using the .nav-icon class
-           with font-awesome or any other icon font library -->
-
-          <li class="nav-item">
-            <a href="form.html" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>Layout Options</p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="{{url('/order')}}" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>Order</p>
-            </a>
-          </li>
         </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
+        <!-- /.sidebar-menu -->
+    </section>
     <!-- /.sidebar -->
-  </aside>
+</aside>
