@@ -35,11 +35,13 @@ Route::middleware('auth')->group(function () {
 //============================================== Order =========================================
 Route::get('/order', [OrderController::class, 'index'])->name('order.index');
 Route::get('/estimate_Bill_view', [OrderController::class, 'estimate_Bill_view'])->name('estimate_Bill_view');
+Route::get('/manage_estimate_bill', [OrderController::class, 'manage_Estimate_Bill_View'])->name('manage_Estimate_Bill_View');
 
 
 
 //============================================ Product ==========================================
 Route::get('/product_view', [ProductController::class, 'index'])->name('product');
+Route::get('/add_desing_view', [ProductController::class, 'add_Desing_View'])->name('add_desing_view');
 
 
 

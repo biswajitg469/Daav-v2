@@ -1,60 +1,58 @@
 <x-app-layout>
-
     <x-slot name="title">
         <h1>Add Product</h1>
         <div id="response" class="alert alert-success" style="display:none;">
             <a href="#" class="close" data-dismiss="alert">&times;</a>
             <div class="message"></div>
         </div>
+        <x-slot name="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Product Information</h4>
+                        </div>
+                        <div class="panel-body form-group form-group-sm">
+                            <!-- Blade Form -->
+                            <form method="POST" action="" id="add_product">
+                                @csrf <!-- CSRF token for security -->
 
-        <div class="container pt-10" style="padding-left: 10px;"> <!-- Added pt-2 for top padding -->
-            <div class="row justify-content-center"> <!-- Center the form within the row -->
-                <div class="col-lg-10 col-md-10 col-sm-10"> <!-- Adjusted to a smaller column size -->
-                    <div class="card shadow rounded-3">
-                        <p class="card-title py-2 bg-success" style="padding-left: 20px; height:50px;"></p>
+                                <input type="hidden" name="action" value="add_product">
 
-                        <!-- Product Form -->
-                        <form id="product_form">
-                            @csrf <!-- Include CSRF token for Laravel -->
-                            <div class="card-body">
-                                <input type="hidden" name="code" value="" id="editcode">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <!-- Product Name Input -->
+                                        <input type="text" class="form-control" name="product_name"
+                                            placeholder="Enter Product Name" required>
+                                    </div>
 
-                                <div class="mb-3 row">
-                                    <!-- Product Name -->
-                                    <label for="productName" class="col-lg-5 col-md-4 col-sm-12 col-form-label required">Product Name:</label>
-                                    <div class="col-lg-5 col-md-8 col-sm-12">
-                                        <input type="text" id="productName" name="productName" class="form-control" placeholder="Enter Product Name">
+                                    <div class="col-xs-4">
+                                        <!-- Product Description Input -->
+                                        <input type="text" class="form-control" name="product_desc"
+                                            placeholder="Enter Product Description" required>
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <div class="input-group">
+                                            <!-- Currency Symbol (use Blade to output the value) -->
+                                            <input type="number" name="product_price" class="form-control"
+                                                placeholder="0.00" required aria-describedby="sizing-addon1">
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="mb-3 row">
-                                    <!-- Product Description -->
-                                    <label for="productDescription" class="col-lg-5 col-md-4 col-sm-12 col-form-label required">Product Description:</label>
-                                    <div class="col-lg-5 col-md-8 col-sm-12">
-                                        <textarea id="productDescription" name="productDescription" class="form-control" placeholder="Enter Product Description" rows="3" style="resize:none;"></textarea>
+                                <div class="row mt-3">
+                                    <div class="col-xs-12">
+                                        <!-- Add Product Button -->
+                                        <input type="submit" id="action_add_product"
+                                            class="btn btn-success float-right" value="Add Product"
+                                            data-loading-text="Adding...">
                                     </div>
                                 </div>
-
-                                <div class="mb-3 row">
-                                    <!-- Price -->
-                                    <label for="price" class="col-lg-5 col-md-4 col-sm-12 col-form-label required">Price:</label>
-                                    <div class="col-lg-5 col-md-8 col-sm-12">
-                                        <input type="text" id="price" name="price" class="form-control" placeholder="Enter Price" step="0.01" min="0">
-                                    </div>
-                                </div>
-
-                                <!-- Submit Button -->
-                                <div class="mt-5 text-center">
-                                    <button type="submit" class="btn btn-success">Submit</button>
-                                </div>
-
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
+        </x-slot>
     </x-slot>
 </x-app-layout>

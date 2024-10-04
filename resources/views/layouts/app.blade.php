@@ -23,6 +23,7 @@
     <script src="js/moment.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script> --}}
     <script src="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
     <script src="js/bootstrap.datetime.js"></script>
     <script src="js/bootstrap.password.js"></script>
@@ -35,6 +36,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.datetimepicker.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap.min.css"> --}}
     <link rel="stylesheet" href="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
 

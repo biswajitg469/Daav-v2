@@ -13,7 +13,11 @@ class ProductController extends Controller
     {
         return view('product.product_add');
     }
-    
+    public function add_Desing_View()
+    {
+        return view('product.add_desing');
+    }
+
 
     /**
      * Show the form for creating a new resource.

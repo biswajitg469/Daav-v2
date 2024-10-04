@@ -13,9 +13,13 @@ class OrderController extends Controller
     {
         return view('order.order_create');
     }
-    public function estimate_Bill_view ()
+    public function estimate_Bill_View ()
     {
         return view('order.create_estimate_Bill');
+    }
+    public function manage_Estimate_Bill_View ()
+    {
+        return view('order.manage_estimate_bill');
     }
 
     /**
