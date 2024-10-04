@@ -34,6 +34,7 @@ Route::middleware('auth')->group(function () {
 
 //============================================== Order =========================================
 Route::get('/order', [OrderController::class, 'index'])->name('order.index');
+Route::get('/estimate_Bill_view', [OrderController::class, 'estimate_Bill_view'])->name('estimate_Bill_view');
 
 
 

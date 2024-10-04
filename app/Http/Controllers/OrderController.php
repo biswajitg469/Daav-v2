@@ -13,6 +13,10 @@ class OrderController extends Controller
     {
         return view('order.order_create');
     }
+    public function estimate_Bill_view ()
+    {
+        return view('order.create_estimate_Bill');
+    }
 
     /**
      * Show the form for creating a new resource.
