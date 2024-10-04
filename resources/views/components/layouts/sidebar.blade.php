@@ -8,7 +8,7 @@
             <li class="header" style="color: white;background: #1a2226;">MENU</li>
             <!-- Menu 0.1 -->
             <li class="treeview">
-                <a href="dashboard.php" style="color: white;"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
+                <a href="{{url('/dashboard')}}" style="color: white;"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
             </li>
             <!-- Menu 1 -->
             <li class="treeview">
@@ -18,9 +18,9 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="order-create.php" style="color: white;"><i class="fa fa-solid fa-file-circle-plus"></i>Create Order-Bill</a></li>
+                    <li><a href="{{url('/order')}}" style="color: white;"><i class="fa fa-solid fa-file-circle-plus"></i>Create Order-Bill</a></li>
                     <li><a href="order-create.php" style="color: white;"><i class="fa fa-solid fa-list-check"></i>Manage Order-Bill</a></li>
-                    <li><a href="invoice-create.php" style="color: white;"><i class="fa fa-plus"></i>Create Estimate-Bill</a></li>
+                    <li><a href="{{url('estimate_Bill_view')}}" style="color: white;"><i class="fa fa-plus"></i>Create Estimate-Bill</a></li>
                     <li><a href="invoice-list.php" style="color: white;"><i class="fa fa-cog"></i>Manage Estimate-Bill</a></li>
                     <li><a href="#" class="download-csv" style="color: white;"><i class="fa fa-download"></i>Download CSV</a></li>
                 </ul>
