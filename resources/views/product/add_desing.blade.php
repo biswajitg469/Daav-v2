@@ -14,46 +14,46 @@
     </x-slot>
     <x-slot name="content">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>Design Information</h4>
-                    </div>
-                    <div class="panel-body form-group form-group-sm">
+            <div class="container mt-5" style="width:auto;margin: 30px;">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Design Information</h4>
+                        </div>
+                        <div class="panel-body form-group form-group-sm">
 
-                        <!-- HTML Form -->
-                        <form method="POST" action="#" id="add_design">
+                            <!-- HTML Form -->
+                            <form method="POST" action="#" id="add_design">
 
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <!-- Design Name Input -->
-                                    <input type="text" class="form-control" name="design_name"
-                                        placeholder="Enter Design Name" required>
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <!-- Design Name Input -->
+                                        <input type="text" class="form-control" name="design_name"
+                                            placeholder="Enter Design Name" required>
+                                    </div>
+
+                                    <div class="col-xs-5">
+                                        <!-- Design Description Input -->
+                                        <input type="text" class="form-control" name="design_desc"
+                                            placeholder="Enter Design Description" required>
+                                    </div>
                                 </div>
 
-                                <div class="col-xs-6">
-                                    <!-- Design Description Input -->
-                                    <input type="text" class="form-control" name="design_desc"
-                                        placeholder="Enter Design Description" required>
+                                <div class="row mt-3">
+                                    <div class="col-xs-11">
+                                        <!-- Add Design Button -->
+                                        <input type="submit" id="action_add_design" class="btn btn-success float-right"
+                                            value="Add Design" data-loading-text="Adding...">
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
 
-                            <div class="row mt-3">
-                                <div class="col-xs-12">
-                                    <!-- Add Design Button -->
-                                    <input type="submit" id="action_add_design" class="btn btn-success float-right"
-                                        value="Add Design" data-loading-text="Adding...">
-                                </div>
-                            </div>
-                        </form>
-
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        </div>
-        </div>
-        </div>
+
     </x-slot>
 </x-app-layout>

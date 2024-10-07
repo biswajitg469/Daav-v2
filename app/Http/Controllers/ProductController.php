@@ -17,6 +17,14 @@ class ProductController extends Controller
     {
         return view('product.add_desing');
     }
+    public function manage_product_View()
+    {
+        return view('product.manage_products');
+    }
+    public function manage_Desing_View()
+    {
+        return view('product.manage_designs');
+    }
 
 
     /**
