@@ -15,11 +15,16 @@
         </div>
     </div>
 </x-app-layout> --}}
-
+<style>
+    .small-box{
+        margin: 15px;
+        padding: 0px;
+    }
+</style>
 <x-app-layout>
 
     <x-slot name="title">
-        <h1>Hello</h1>
+        <h1>Dashboard</h1>
     </x-slot>
     <x-slot name="content">
             <!-- Small boxes (Stat box) -->
