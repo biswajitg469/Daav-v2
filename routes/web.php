@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
@@ -43,7 +44,7 @@ Route::get('/manage_estimate_bill', [OrderController::class, 'manage_Estimate_Bi
 Route::get('/product_view', [ProductController::class, 'index'])->name('product');
 Route::get('/add_desing_view', [ProductController::class, 'add_Desing_View'])->name('add_desing_view');
 
-
+Route::get('/customer_add', [CustomerController::class, 'index'])->name('customer');
 
 
 

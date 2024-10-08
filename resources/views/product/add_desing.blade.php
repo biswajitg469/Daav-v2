@@ -51,9 +51,5 @@
                 </div>
             </div>
         </div>
-
-        </div>
-        </div>
-        </div>
     </x-slot>
 </x-app-layout>
