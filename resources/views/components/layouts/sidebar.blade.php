@@ -47,7 +47,7 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#" style="color: white;"><i class="fa fa-user-plus"></i>Add Customer</a></li>
+                    <li><a href="{{url(('customer'))}}" style="color: white;"><i class="fa fa-user-plus"></i>Add Customer</a></li>
                     <li><a href="#" style="color: white;"><i class="fa fa-cog"></i>Manage Customers</a></li>
                 </ul>
             </li>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
@@ -19,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     // return view('auth.login');
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/dashboard', function () {
@@ -43,9 +44,14 @@ Route::get('/manage_order_Bill_View', [OrderController::class, 'manage_order_Bil
 //============================================ Product ==========================================
 Route::get('/product_view', [ProductController::class, 'index'])->name('product');
 Route::get('/add_desing_view', [ProductController::class, 'add_Desing_View'])->name('add_desing_view');
+<<<<<<< vaibhav
+//============================================= Customer =========================================
+Route::resource('customer', CustomerController::class);
+=======
 Route::get('/manage_product_View', [ProductController::class, 'manage_product_View'])->name('manage_product_View');
 Route::get('/manage_Desing_View', [ProductController::class, 'manage_Desing_View'])->name('manage_Desing_View');
 
+>>>>>>> main
 
 
 

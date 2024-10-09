@@ -53,7 +53,11 @@
                 </div>
             </div>
         </div>
+<<<<<<< vaibhav
+=======
 
 
+
+>>>>>>> main
     </x-slot>
 </x-app-layout>
