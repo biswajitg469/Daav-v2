@@ -43,8 +43,9 @@ Route::get('/manage_estimate_bill', [OrderController::class, 'manage_Estimate_Bi
 //============================================ Product ==========================================
 Route::get('/product_view', [ProductController::class, 'index'])->name('product');
 Route::get('/add_desing_view', [ProductController::class, 'add_Desing_View'])->name('add_desing_view');
+//============================================= Customer =========================================
+Route::resource('customer', CustomerController::class);
 
-Route::get('/customer_add', [CustomerController::class, 'index'])->name('customer');
 
 
 

@@ -10,26 +10,27 @@
 
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
-        <!-- Sidebar toggle button-->
         <a href="#" class="sidebar-toggle" style="color: white;" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
         </a>
-        <!-- Navbar Right Menu -->
-
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav" style="margin-right: 45px;margin-top: -8px;">
-                <!-- User Account Menu -->
-                <li class="dropdown user user-menu">
-                    <!-- Menu Toggle Button -->
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <!-- The user image in the navbar-->
-                        <img src="./images/user_image.png" class="user-image" alt="User Image">
+                <li class="nav-item dropdown user-menu">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <img src="{{ asset('images/user_image.png') }}" class="user-image img-circle elevation-2"
+                            alt="User Image">
+                        <span class="d-none d-md-inline user">{{ Auth::user()->name }}</span>
                     </a>
-                    <ul class="dropdown-menu">
-                        <!-- Drop down list-->
-                        <li><a href="logout.php" class="btn btn-default btn-flat">Log out</a></li>
+                    <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <li class="dropdown-item">
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button type="submit" class="btn btn-default btn-flat">Log out</button>
+                            </form>
+                        </li>
                     </ul>
                 </li>
+
             </ul>
         </div>
     </nav>
