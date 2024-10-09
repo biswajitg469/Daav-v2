@@ -19,7 +19,7 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="{{url('/order')}}" style="color: white;"><i class="fa fa-solid fa-file-circle-plus"></i>Create Order-Bill</a></li>
-                    <li><a href="#" style="color: white;"><i class="fa fa-solid fa-list-check"></i>Manage Order-Bill</a></li>
+                    <li><a href="{{url('manage_order_Bill_View')}}" style="color: white;"><i class="fa fa-solid fa-list-check"></i>Manage Order-Bill</a></li>
                     <li><a href="{{url('estimate_Bill_view')}}" style="color: white;"><i class="fa fa-plus"></i>Create Estimate-Bill</a></li>
                     <li><a href="{{url('manage_estimate_bill')}}" style="color: white;"><i class="fa fa-cog"></i>Manage Estimate-Bill</a></li>
                     <li><a href="#" class="download-csv" style="color: white;"><i class="fa fa-download"></i>Download CSV</a></li>
@@ -34,9 +34,9 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="{{url('product_view')}}" style="color: white;"><i class="fa fa-plus"></i>Add Products</a></li>
-                    <li><a href="#" style="color: white;"><i class="fa fa-cog"></i>Manage Products</a></li>
+                    <li><a href="{{url('manage_product_View')}}" style="color: white;"><i class="fa fa-cog"></i>Manage Products</a></li>
                     <li><a href="{{url('add_desing_view')}}" style="color: white;"><i class="fa fa-solid fa-pen-nib"></i>Add Design</a></li>
-                    <li><a href="#" style="color: white;"><i class="fa fa-solid fa-pen-ruler"></i>Manage Design</a></li>
+                    <li><a href="{{url('manage_Desing_View')}}" style="color: white;"><i class="fa fa-solid fa-pen-ruler"></i>Manage Design</a></li>
                 </ul>
             </li>
             <!-- Menu 3 -->

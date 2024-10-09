@@ -37,14 +37,21 @@ Route::middleware('auth')->group(function () {
 Route::get('/order', [OrderController::class, 'index'])->name('order.index');
 Route::get('/estimate_Bill_view', [OrderController::class, 'estimate_Bill_view'])->name('estimate_Bill_view');
 Route::get('/manage_estimate_bill', [OrderController::class, 'manage_Estimate_Bill_View'])->name('manage_Estimate_Bill_View');
+Route::get('/manage_order_Bill_View', [OrderController::class, 'manage_order_Bill_View'])->name('manage_order_Bill_View');
 
 
 
 //============================================ Product ==========================================
 Route::get('/product_view', [ProductController::class, 'index'])->name('product');
 Route::get('/add_desing_view', [ProductController::class, 'add_Desing_View'])->name('add_desing_view');
+<<<<<<< vaibhav
 //============================================= Customer =========================================
 Route::resource('customer', CustomerController::class);
+=======
+Route::get('/manage_product_View', [ProductController::class, 'manage_product_View'])->name('manage_product_View');
+Route::get('/manage_Desing_View', [ProductController::class, 'manage_Desing_View'])->name('manage_Desing_View');
+
+>>>>>>> main
 
 
 

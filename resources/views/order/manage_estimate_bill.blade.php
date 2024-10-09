@@ -3,7 +3,7 @@
         <h1 style="margin: 35px; font-size: 30px;">Manage Estimate-Bill</h1>
     </x-slot>
     <x-slot name="content">
-        <div class="container mt-5" style="width: 1300px;">
+        <div class="container mt-5" style="width:auto;">
             <!-- DataTable Panel -->
             <div class="panel panel-default">
                 <div class="panel-heading">
