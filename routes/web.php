@@ -47,8 +47,8 @@ Route::get('/manage_order_Bill_View', [OrderController::class, 'manage_order_Bil
 
 //============================================ Product ==========================================
 Route::get('/product_view', [ProductController::class, 'index'])->name('product');
-
 Route::get('/manage_product_View', [ProductController::class, 'manage_product_View'])->name('manage_product_View');
+Route::post('/product_add',[ProductController::class,'product_add']);
 //============================================ Desing ==========================================
 Route::get('/add_desing_view', [DesingController::class, 'add_Desing_View'])->name('add_desing_view');
 Route::get('/manage_Desing_View', [DesingController::class, 'manage_Desing_View'])->name('manage_Desing_View');

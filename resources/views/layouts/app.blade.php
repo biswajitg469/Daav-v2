@@ -27,12 +27,12 @@
     <script src="js/bootstrap.datetime.js"></script>
     <script src="js/bootstrap.password.js"></script>
     <script src="js/scripts.js"></script>
-    
+
     <!-- AdminLTE App -->
     <script src="js/app.min.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.4/sweetalert2.css">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.14.4/sweetalert2.css"> --}}
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.datetimepicker.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">

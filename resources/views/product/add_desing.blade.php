@@ -1,4 +1,3 @@
-
 <x-app-layout>
 
     <x-slot name="title">
@@ -92,20 +91,20 @@
                     // alert('sdgsdgsdgdsg');
                     const msg = "Desing details save successfully";
                     // alert('sdgsdgsdgdsg');
-                    $.confirm({
-                        title: 'Success!',
-                        type: 'green',
-                        icon: 'fa fa-check',
-                        content: msg,
-                        buttons: {
-                            ok: function() {
-                                window.location.href = "order_list";
-                            },
-                            // cancel: function() {
-                            //     $.alert('Canceled!');
-                            // },
-                        }
-                    });
+                    // $.confirm({
+                    //     title: 'Success!',
+                    //     type: 'green',
+                    //     icon: 'fa fa-check',
+                    //     content: msg,
+                    //     buttons: {
+                    //         ok: function() {
+                    //             window.location.href = "order_list";
+                    //         },
+                    //         // cancel: function() {
+                    //         //     $.alert('Canceled!');
+                    //         // },
+                    //     }
+                    // });
                 }
                 // else if (data.status == 2) {
                 //     var msg =
